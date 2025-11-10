@@ -1,0 +1,204 @@
+### POST INVERNADA 1
+POST http://localhost:8080/api/invernadas
+Content-Type: application/json
+
+{
+  "descricao": "Invernada A",
+  "urlFoto": "https://pontaagro.com/wp-content/uploads/2024/06/image.jpeg",
+  "observacoes": "Área principal de confinamento, próxima ao galpão de manejo."
+}
+
+###
+
+### 10 BOVINOS
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Furacão",
+  "codigoEpc": "EPC-A001",
+  "codigoInterno": "INT-A001",
+  "numeroBrinco": "BR-101",
+  "raca": "Nelore",
+  "dataNascimento": "2022-04-10",
+  "pesoAtualKg": 475.3,
+  "pelagem": "Branca",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Ventania",
+  "codigoEpc": "EPC-A002",
+  "codigoInterno": "INT-A002",
+  "numeroBrinco": "BR-102",
+  "raca": "Guzerá",
+  "dataNascimento": "2021-12-05",
+  "pesoAtualKg": 510.8,
+  "pelagem": "Cinza",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Estrela",
+  "codigoEpc": "EPC-A003",
+  "codigoInterno": "INT-A003",
+  "numeroBrinco": "BR-103",
+  "raca": "Angus",
+  "dataNascimento": "2022-02-20",
+  "pesoAtualKg": 438.0,
+  "pelagem": "Preta",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Jade",
+  "codigoEpc": "EPC-A004",
+  "codigoInterno": "INT-A004",
+  "numeroBrinco": "BR-104",
+  "raca": "Girolando",
+  "dataNascimento": "2023-01-15",
+  "pesoAtualKg": 362.9,
+  "pelagem": "Malhada branca e preta",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Trovão",
+  "codigoEpc": "EPC-A005",
+  "codigoInterno": "INT-A005",
+  "numeroBrinco": "BR-105",
+  "raca": "Tabapuã",
+  "dataNascimento": "2021-11-08",
+  "pesoAtualKg": 525.4,
+  "pelagem": "Branca acinzentada",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Cristal",
+  "codigoEpc": "EPC-A006",
+  "codigoInterno": "INT-A006",
+  "numeroBrinco": "BR-106",
+  "raca": "Nelore",
+  "dataNascimento": "2022-07-02",
+  "pesoAtualKg": 450.1,
+  "pelagem": "Branca",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Marfim",
+  "codigoEpc": "EPC-A007",
+  "codigoInterno": "INT-A007",
+  "numeroBrinco": "BR-107",
+  "raca": "Guzerá",
+  "dataNascimento": "2022-06-22",
+  "pesoAtualKg": 489.7,
+  "pelagem": "Cinza-claro",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Raio",
+  "codigoEpc": "EPC-A008",
+  "codigoInterno": "INT-A008",
+  "numeroBrinco": "BR-108",
+  "raca": "Angus",
+  "dataNascimento": "2022-05-01",
+  "pesoAtualKg": 456.2,
+  "pelagem": "Preta",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Lua",
+  "codigoEpc": "EPC-A009",
+  "codigoInterno": "INT-A009",
+  "numeroBrinco": "BR-109",
+  "raca": "Girolando",
+  "dataNascimento": "2023-02-10",
+  "pesoAtualKg": 372.4,
+  "pelagem": "Malhada branca e marrom",
+  "invernadaId": 1
+}
+
+###
+
+POST http://localhost:8080/api/bovinos
+Content-Type: application/json
+
+{
+  "nomeAnimal": "Sol",
+  "codigoEpc": "EPC-A010",
+  "codigoInterno": "INT-A010",
+  "numeroBrinco": "BR-110",
+  "raca": "Nelore",
+  "dataNascimento": "2022-09-25",
+  "pesoAtualKg": 460.0,
+  "pelagem": "Branca",
+  "invernadaId": 1
+}
+
+
+###
+
+POST http://localhost:8080/api/leitura-rfid
+Content-Type: application/json
+
+{
+  "bovinoId": 1,
+  "antena": "ANT-01",
+  "timestamp": "2025-11-06T23:32:00"
+}
+
+###
+
+POST http://localhost:8080/api/eventos-sanitarios
+Content-Type: application/json
+
+{
+  "bovinoId": 1,
+  "tipo": "Vacina",
+  "descricao": "Carbúnculo sintomático",
+  "dataEvento": "2025-10-20"
+}
