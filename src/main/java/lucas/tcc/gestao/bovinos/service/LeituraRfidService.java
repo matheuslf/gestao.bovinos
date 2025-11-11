@@ -27,4 +27,7 @@ public class LeituraRfidService {
     public List<LeituraRFID> listarPorBovino(Long bovinoId){
         return repo.findByBovino(bovinoService.buscar(bovinoId));
     }
+    public List<LeituraRFID> listarUltimasPorBovino() {
+        return repo.findUltimasLeiturasPorBovino();
+    }
 }

@@ -1,5 +1,5 @@
 ### POST INVERNADA 1
-POST http://localhost:8080/api/invernadas
+POST https://gestao-bovinos.onrender.com/api/invernadas
 Content-Type: application/json
 
 {
@@ -11,7 +11,7 @@ Content-Type: application/json
 ###
 
 ### 10 BOVINOS
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -45,7 +45,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -62,7 +62,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -79,7 +79,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -130,7 +130,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/bovinos
+POST https://gestao-bovinos.onrender.com/api/bovinos
 Content-Type: application/json
 
 {
@@ -182,7 +182,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/leitura-rfid
+POST https://gestao-bovinos.onrender.com/api/leitura-rfid
 Content-Type: application/json
 
 {
@@ -193,7 +193,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/api/eventos-sanitarios
+POST https://gestao-bovinos.onrender.com/api/eventos-sanitarios
 Content-Type: application/json
 
 {

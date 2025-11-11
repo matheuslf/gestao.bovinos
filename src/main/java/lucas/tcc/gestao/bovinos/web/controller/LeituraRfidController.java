@@ -40,4 +40,16 @@ public class LeituraRfidController {
                 .map(l -> new LeituraResponse(l.getId(), l.getBovino().getId(), l.getAntena(), l.getTimestamp()))
                 .toList();
     }
+
+    @GetMapping("/ultimas")
+    public List<LeituraResponse> listarUltimas() {
+        return service.listarUltimasPorBovino().stream()
+                .map(l -> new LeituraResponse(
+                        l.getId(),
+                        l.getBovino().getId(),
+                        l.getAntena(),
+                        l.getTimestamp()
+                ))
+                .toList();
+    }
 }

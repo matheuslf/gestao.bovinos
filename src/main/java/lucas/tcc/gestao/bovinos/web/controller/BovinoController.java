@@ -5,6 +5,7 @@ import lucas.tcc.gestao.bovinos.domain.entity.Bovino;
 import lucas.tcc.gestao.bovinos.service.BovinoService;
 import lucas.tcc.gestao.bovinos.web.dto.bovino.BovinoRequest;
 import lucas.tcc.gestao.bovinos.web.dto.bovino.BovinoResponse;
+import lucas.tcc.gestao.bovinos.web.dto.leitura.LeituraResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
