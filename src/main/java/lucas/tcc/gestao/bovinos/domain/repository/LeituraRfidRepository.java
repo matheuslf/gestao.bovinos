@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface LeituraRfidRepository extends JpaRepository<LeituraRFID, Long> {
     List<LeituraRFID> findByBovino(Bovino bovino);
@@ -19,4 +20,12 @@ public interface LeituraRfidRepository extends JpaRepository<LeituraRFID, Long> 
            )
            """)
     List<LeituraRFID> findUltimasLeiturasPorBovino();
+
+    @Query("""
+           SELECT l FROM LeituraRFID l
+           WHERE l.bovino = :bovino
+           ORDER BY l.timestamp DESC
+           LIMIT 1
+           """)
+    Optional<LeituraRFID> findUltimaLeituraPorBovino(Bovino bovino);
 }

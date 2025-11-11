@@ -6,6 +6,7 @@ import lucas.tcc.gestao.bovinos.service.LeituraRfidService;
 import lucas.tcc.gestao.bovinos.web.dto.leitura.LeituraRequest;
 import lucas.tcc.gestao.bovinos.web.dto.leitura.LeituraResponse;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -52,4 +53,18 @@ public class LeituraRfidController {
                 ))
                 .toList();
     }
+
+    @GetMapping("/bovino/{bovinoId}/ultima")
+    public ResponseEntity<LeituraResponse> buscarUltimaPorBovino(@PathVariable Long bovinoId) {
+        return service.buscarUltimaPorBovino(bovinoId)
+                .map(l -> new LeituraResponse(
+                        l.getId(),
+                        l.getBovino().getId(),
+                        l.getAntena(),
+                        l.getTimestamp()
+                ))
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
 }

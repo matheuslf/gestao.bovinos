@@ -6,6 +6,7 @@ import lucas.tcc.gestao.bovinos.domain.repository.LeituraRfidRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class LeituraRfidService {
@@ -30,4 +31,10 @@ public class LeituraRfidService {
     public List<LeituraRFID> listarUltimasPorBovino() {
         return repo.findUltimasLeiturasPorBovino();
     }
+
+    public Optional<LeituraRFID> buscarUltimaPorBovino(Long bovinoId) {
+        Bovino bovino = bovinoService.buscar(bovinoId);
+        return repo.findUltimaLeituraPorBovino(bovino);
+    }
+
 }
